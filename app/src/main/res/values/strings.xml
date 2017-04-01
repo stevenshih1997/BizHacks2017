@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">StoreLocator</string>
+    <string name="floor_one">1</string>
+    <string name="floor_two">2</string>
+    <string name="floor_three">3</string>
+    <string name="help">help</string>
+    <string name="message">message</string>
+    <string name="call">call</string>
+
 </resources>

@@ -2,10 +2,11 @@
 
 ## While in a store, Best Buy customers want to use their smart phones as a way to quickly and easily connect with a Blue Shirt at the moment they need help.
 
-	- UI design 
+	- UI design (XML)
 	- Android App
-	- Server/Database
-		- Firebase
-	- GPS Location tracking
-		- Use indooratlas API
+		- Server/Database
+			- Firebase
+		- GPS Location tracking
+			- Use indooratlas API
+	- Presentation
 	
