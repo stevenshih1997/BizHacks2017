@@ -59,6 +59,14 @@
             android:text="@string/call"/>
 
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lat, Lng"
+        android:id="@+id/txtLocation"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentStart="true" />
 
 
 

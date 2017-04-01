@@ -3,6 +3,7 @@ package com.location.bizhacks.storelocator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import com.indooratlas.android.sdk.IALocation;
 import com.indooratlas.android.sdk.IALocationListener;
@@ -28,6 +29,9 @@ public class MapActivity extends AppCompatActivity {
             public void onLocationChanged(IALocation location) {
                 Log.d(TAG, "Latitude: " + location.getLatitude());
                 Log.d(TAG, "Longitude: " + location.getLongitude());
+
+                TextView txtLoc = (TextView) findViewById(R.id.txtLocation);
+                txtLoc.setText(location.getLatitude() + ", " + location.getLongitude());
             }
             // Called when status has changed.
             @Override
