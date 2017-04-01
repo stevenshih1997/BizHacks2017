@@ -10,19 +10,14 @@ import android.Manifest;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Arrays;
 
-import com.indooratlas.android.sdk.IALocation;
-import com.indooratlas.android.sdk.IALocationListener;
-import com.indooratlas.android.sdk.IALocationManager;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     private final int CODE_PERMISSIONS = 225;//...
-    private IALocationManager mIALocationManager; //Register and unregister for periodic updates of the user's current location.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         };
         ActivityCompat.requestPermissions(this, neededPermissions, CODE_PERMISSIONS );
 
-        mIALocationManager = IALocationManager.create(this);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
@@ -114,21 +107,5 @@ public class MainActivity extends AppCompatActivity {
 
         //Handle if any of the permissions are denied, in grantResults
     }
-
-
-
-    private IALocationListener mIALocationListener = new IALocationListener() {
-
-        // Called when the location has changed.
-        @Override
-        public void onLocationChanged(IALocation location) {
-            
-        }
-
-        @Override
-        public void onStatusChanged(String s, int i, Bundle bundle) {
-
-        }
-    };
 
 }
