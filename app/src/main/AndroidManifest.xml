@@ -22,14 +22,14 @@
             android:name="com.indooratlas.android.sdk.API_SECRET"
             android:value="QUHHjGm7iPfhSCv600YJ/FQb7hKXs/RpXfzX+ji+huSsrt2tKQblEoqZQRU0hte3T/vxrUHDqhQn/YzJcILVZ2CR5iBXZ6ATxxIk8+r6hNjLcgV9KtYdookS28m6cw==" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MapActivity"></activity>
+
     </application>
 
 </manifest>
