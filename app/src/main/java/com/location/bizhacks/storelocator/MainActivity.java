@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String ANONYMOUS = "Anonymous";
     public static final int RC_SIGN_IN = 1;
-    private static String TAG = "MainActivity";
+
 
     private String mUsername;
 
