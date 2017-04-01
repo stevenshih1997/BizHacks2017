@@ -8,15 +8,15 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginStart="263dp"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
         android:layout_above="@+id/main_toolbar"
-        android:layout_alignParentStart="true">
+        android:layout_centerHorizontal="true">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+
             android:text="@string/floor_one"/>
 
         <Button
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/floor_two"/>
+            android:text="@string/floor_three"/>
     </LinearLayout>
 
     <LinearLayout
@@ -40,24 +40,23 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true">
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@android:drawable/ic_input_add"/>
+            android:text="@string/help"/>
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/middle_button"
-            android:src="@android:drawable/ic_input_delete"/>
+            android:text="@string/message"/>
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@android:drawable/ic_input_get"/>
+            android:text="@string/call"/>
 
     </LinearLayout>
 
